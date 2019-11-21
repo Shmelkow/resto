@@ -191,14 +191,15 @@ body {
         height: 34px;
         border-radius: 2px;
         background-color: #fff;
-        border: none;
         border: 1px solid #d7d5d5;
         color: #b7b7b7;
         font-family: Aleo;
         font-size: 14px;
-        font-weight: 400;
         letter-spacing: 0.98px;
         padding: 0 2em;
         transition: .4s;
+    }
+    &-btn:hover {
+        background-color: #ededed;
     }
 }
