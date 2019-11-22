@@ -190,7 +190,7 @@ body {
         content: '';
         display: inline-block;
         position: absolute;
-        width: 2px;
+        width: 1px;
         height: 12px;
         background-color: #b7b7b7;
         top: 50%;
@@ -207,7 +207,7 @@ body {
         border-left: 2px solid #b7b7b7;
         top: 50%;
         right: 10%;
-        transform: translateY(-25%) rotate(135deg);
+        transform: translateY(-60%) rotate(-45deg);
     }
 }
 
