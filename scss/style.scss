@@ -117,18 +117,28 @@ body {
         margin: 0 auto;
         margin-bottom: 80px;
         text-align: center;
+        position: relative;
+    }
+
+    &__flag {
+        margin: 0 auto;
         max-width: 155px;
         height: 70px;
         background-color: #f34949;
+        border-style: solid;
+        border-width: 0 77.5px 7px 77.5px;
+        border-color: transparent transparent #ffffff transparent;
     }
 
     &__title {
-        line-height: 70px;
+        position: absolute;
         color: #ffffff;
         font-size: 20px;
         font-weight: 700;
-        line-height: 60px;
         letter-spacing: 1px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
 }
 
