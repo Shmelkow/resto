@@ -75,8 +75,7 @@ body {
     right: 28%; }
 
 .ba-main-menu {
-  min-height: 100vh;
-  padding-bottom: 100px; }
+  min-height: 100vh; }
 
 .ba-section-header {
   margin: 0 auto;
@@ -131,7 +130,7 @@ body {
   letter-spacing: 0.6px; }
 
 .ba-menu__line {
-  margin: 9px 40px 0 30px;
+  margin: 9px 40px 0 20px;
   flex-grow: 1;
   height: 1px;
   background-color: #e3e1e1; }

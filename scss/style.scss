@@ -109,7 +109,6 @@ body {
 //======= ba-main-menu =======//
 .ba-main-menu {
     min-height: 100vh;
-    padding-bottom: 100px;
 }
 .ba-section {
 
@@ -167,17 +166,6 @@ body {
         letter-spacing: 0.8px;
     }
 
-    // &__title::after {
-    //     content: '';
-    //     display: inline-block;
-    //     width: 192px;
-    //     height: 1px;
-    //     background-color: #e3e1e1;
-    //     position: absolute;
-    //     bottom: 50%;
-    //     right: 10%;
-    // }
-
     &__text {
         margin: 8px 0 0;
         color: #b7b7b7;
@@ -188,7 +176,7 @@ body {
     }
 
     &__line {
-        margin: 9px 40px 0 30px;
+        margin: 9px 40px 0 20px;
         flex-grow: 1;
         height: 1px;
         background-color: #e3e1e1;
@@ -213,3 +201,6 @@ body {
         background-color: #ededed;
     }
 }
+
+//======= ba-dishes =======//
+
