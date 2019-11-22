@@ -72,9 +72,9 @@
   text-align: justify; }
 
 /* style.scss*/
-* {
-  border: 1px dashed black; }
-
+/** {
+    border: 1px dashed black;
+}*/
 h1, h2, h3, h4, h5, h6 {
   margin: 0 auto; }
 
@@ -151,7 +151,7 @@ body {
     right: 28%; }
 
 .ba-main-menu {
-  min-height: 100vh; }
+  padding-bottom: 100px; }
 
 .ba-section-header {
   margin: 0 auto;
@@ -213,6 +213,7 @@ body {
 
 .ba-menu-btn {
   display: block;
+  position: relative;
   margin: 0 auto;
   min-width: 133px;
   height: 34px;
@@ -220,14 +221,36 @@ body {
   background-color: #fff;
   border: 1px solid #d7d5d5;
   color: #b7b7b7;
-  font-family: Aleo;
   font-size: 14px;
   letter-spacing: 0.98px;
-  padding: 0 2em;
+  padding: 0 2em 0 0;
   transition: .4s; }
 
 .ba-menu-btn:hover {
   background-color: #ededed; }
+
+.ba-menu-btn::before {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 2px;
+  height: 12px;
+  background-color: #b7b7b7;
+  top: 50%;
+  left: 75%;
+  transform: translateY(-50%); }
+
+.ba-menu-btn::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  border-bottom: 2px solid #b7b7b7;
+  border-left: 2px solid #b7b7b7;
+  top: 50%;
+  right: 10%;
+  transform: translateY(-25%) rotate(135deg); }
 
 .ba-dishes {
   min-height: 562px;
@@ -287,11 +310,53 @@ body {
   padding-bottom: 100px; }
   .ba-gallery-header {
     margin-bottom: 80px; }
-  .ba-gallery__list {
+  .ba-gallery__title {
+    font-size: 22px; }
+  .ba-gallery-list {
     margin-left: 0;
     margin-right: 0; }
+  .ba-gallery-list + .ba-gallery-list {
+    margin-top: -5px; }
   .ba-gallery__item {
     padding: 0; }
   .ba-gallery__img {
     max-width: 100%;
     object-fit: cover; }
+
+.ba-footer {
+  background-color: #3b3b3b;
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  .ba-footer__item {
+    max-width: 235px; }
+  .ba-footer-list {
+    justify-content: space-between;
+    align-items: flex-start; }
+    .ba-footer-list__title {
+      color: #ffffff;
+      letter-spacing: 0.8px; }
+    .ba-footer-list__text {
+      margin: 0;
+      color: #ffffff;
+      font-weight: 300;
+      letter-spacing: 0.8px;
+      line-height: 2; }
+    .ba-footer-list__text strong {
+      color: #ebebeb; }
+  .ba-footer-menu__item + .ba-footer-menu__item {
+    margin-top: 15px; }
+  .ba-footer-menu__link {
+    color: #ffffff;
+    letter-spacing: 0.8px; }
+
+.ba-copyright__text {
+  color: #ececec;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: 0.7px; }
+
+.ba-copyright__link {
+  color: #ececec;
+  font-weight: 700;
+  letter-spacing: 0.7px; }
