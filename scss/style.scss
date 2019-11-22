@@ -303,8 +303,11 @@ body {
         margin-left: 0;
         margin-right: 0;
     }
+    &-list:first-child {
+        background-color: #3b3b3b;
+    }
     &-list + &-list {
-        margin-top: -5px;
+        margin-top: -4px;
     }
     &__item{
         padding: 0;

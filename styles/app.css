@@ -315,8 +315,10 @@ body {
   .ba-gallery-list {
     margin-left: 0;
     margin-right: 0; }
+  .ba-gallery-list:first-child {
+    background-color: #3b3b3b; }
   .ba-gallery-list + .ba-gallery-list {
-    margin-top: -5px; }
+    margin-top: -4px; }
   .ba-gallery__item {
     padding: 0; }
   .ba-gallery__img {
