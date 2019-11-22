@@ -243,9 +243,12 @@ body {
     &__link:hover {
         background-color: #9b9b9b;
     }
-    &__item {
-        padding-left: 30px;
-        padding-right: 30px;
+    &-list {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+    &__item +  &__item{
+        margin-left: 60px;
     }
     &__picture {
         text-align: center;
@@ -280,10 +283,11 @@ body {
     &__title{
         @extend .ba-dishes-header__title;
     }
-    &-list{
-        margin-bottom: 0;
+    &__list{
+        margin-left: 0;
+        margin-right: 0;
     }
-    &__item {
+    &__item{
         padding: 0;
     }
     &__img {
