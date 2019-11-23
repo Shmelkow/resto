@@ -292,6 +292,8 @@ body {
   .ba-dishes__picture {
     text-align: center;
     margin-bottom: 30px; }
+  .ba-dishes-picture__link:hover .ba-dishes__img {
+    filter: drop-shadow(2px 4px 6px red); }
   .ba-dishes__img {
     max-width: 100%;
     object-fit: cover; }
@@ -321,6 +323,8 @@ body {
     margin-top: -4px; }
   .ba-gallery__item {
     padding: 0; }
+  .ba-gallery-picture__link:hover .ba-gallery__img {
+    filter: drop-shadow(2px 4px 6px red); }
   .ba-gallery__img {
     max-width: 100%;
     object-fit: cover; }

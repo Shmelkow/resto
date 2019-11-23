@@ -269,6 +269,10 @@ body {
         text-align: center;
         margin-bottom: 30px;
     }
+    &-picture__link:hover .ba-dishes__img {
+        //box-shadow: 0px 0px 24px 10px rgba(255,0,0,1);
+        filter: drop-shadow(2px 4px 6px rgba(255,0,0,1));
+    }
     &__img {
         max-width: 100%;
         object-fit: cover;
@@ -311,6 +315,9 @@ body {
     }
     &__item{
         padding: 0;
+    }
+    &-picture__link:hover .ba-gallery__img {
+        filter: drop-shadow(2px 4px 6px rgba(255,0,0,1));
     }
     &__img {
         max-width: 100%;
